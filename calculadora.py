@@ -9,9 +9,12 @@ def calc(a, b, op):
         if b == 0: 
             return None 
         return a / b 
+    elif op == "pot":
+        return a**b
 
-if __name__ == "__main__": 
-    print(calc(10, 5, "soma")) 
-    print(calc(10, 5, "sub")) 
-    print(calc(10, 5, "mult")) 
-    print(calc(10, 0, "div"))
+    if __name__ == "__main__": 
+        print(calc(10, 5, "soma")) 
+        print(calc(10, 5, "sub")) 
+        print(calc(10, 5, "mult")) 
+        print(calc(10, 5, "div"))
+        print(calc(2, 3, "pot"))
