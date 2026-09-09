@@ -7,7 +7,7 @@ def calc(a, b, op):
         return a * b 
     elif op == "div": 
         return a / b 
-    elif op == "poc":
+    elif op == "pot":
         return a**b
 
     if __name__ == "__main__": 
