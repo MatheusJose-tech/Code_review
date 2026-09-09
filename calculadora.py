@@ -6,6 +6,8 @@ def calc(a, b, op):
     elif op == "mult": 
         return a * b 
     elif op == "div": 
+        if b == 0: 
+            return None 
         return a / b 
     elif op == "pot":
         return a**b
@@ -15,4 +17,4 @@ def calc(a, b, op):
         print(calc(10, 5, "sub")) 
         print(calc(10, 5, "mult")) 
         print(calc(10, 5, "div"))
-        print(calc(2, 3, "poc"))
+        print(calc(2, 3, "pot"))
